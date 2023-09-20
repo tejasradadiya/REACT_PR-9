@@ -1,0 +1,60 @@
+/* Add this CSS to a separate .css file or use a CSS-in-JS solution */
+
+.contain-table {
+    margin: 20px;
+  }
+  
+  .striped-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .striped-table th,
+  .striped-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .striped-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .striped-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .striped-table tbody tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  
+  .button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .muted-button {
+    background-color: #ccc;
+    color: #000;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  
