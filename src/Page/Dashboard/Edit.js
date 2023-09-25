@@ -34,18 +34,10 @@ function Edit({ selectedEmployee, setIsEditing }) {
 
         dispatch(updateEmployee(id, employee));
         setIsEditing(false);
-
-        Swal.fire({
-            icon: 'success',
-            title: 'Updated!',
-            text: `${employee.firstName} ${employee.lastName}'s data has been updated.`,
-            showConfirmButton: false,
-            timer: 1500
-        });
+        alert("Update succfully")
     };
 
     return (
-        <div className="small-container">
             <form onSubmit={handleUpdate}>
                 <h1>Edit Employee</h1>
                 <label htmlFor="firstName">First Name</label>
@@ -72,7 +64,6 @@ function Edit({ selectedEmployee, setIsEditing }) {
                     value={email}
                     onChange={e => setEmail(e.target.value)}
                 />
-                <div style={{ marginTop: '30px' }}>
                     <input type="submit" value="Update" />
                     <input
                         style={{ marginLeft: '12px' }}
@@ -81,9 +72,7 @@ function Edit({ selectedEmployee, setIsEditing }) {
                         value="Cancel"
                         onClick={() => setIsEditing(false)}
                     />
-                </div>
             </form>
-        </div>
     );
 }
 

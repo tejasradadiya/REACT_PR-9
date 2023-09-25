@@ -19,15 +19,6 @@ function Add({ setIsAdding }) {
     }, [])
 
     const handleAdd = e => {
-        e.preventDefault();
-        if (!firstName || !lastName || !email) {
-            return Swal.fire({
-                icon: 'error',
-                title: 'Error!',
-                text: 'All fields are required.',
-                showConfirmButton: true
-            });
-        }
 
         const id = employees.length + 1;
         const newEmployee = {
@@ -39,19 +30,12 @@ function Add({ setIsAdding }) {
         dispatch(addEmployee(newEmployee));
         setIsAdding(false);
 
-        Swal.fire({
-            icon: 'success',
-            title: 'Added!',
-            text: `${firstName} ${lastName}'s data has been Added.`,
-            showConfirmButton: false,
-            timer: 1500
-        });
+        alert("Add succfully");
     }
 
 
     return (
-        <div className="small-container">
-            <form onSubmit={handleAdd}>
+            <form onSubmit={handleAdd} >
                 <h1>Add Employee</h1>
                 <label htmlFor="firstName">First Name</label>
                 <input
@@ -89,7 +73,6 @@ function Add({ setIsAdding }) {
                     />
                 </div>
             </form>
-        </div>
     );
 }
 

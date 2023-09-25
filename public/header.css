@@ -1,7 +1,5 @@
-/* Header.css (Create a CSS file for your Header component) */
+
 header {
-    background-color: #007bff;
-    color: #fff;
     padding: 20px;
     text-align: center;
   }
@@ -12,17 +10,14 @@ header {
   }
   
   .round-button {
-    background-color: #fff;
-    color: #007bff;
     border: none;
     border-radius: 50px;
     padding: 10px 20px;
     font-size: 16px;
-    cursor: pointer;
   }
   
   .round-button:hover {
-    background-color: #0056b3;
+    background-color: #007bff;
     color: #fff;
   }
   
